@@ -22,9 +22,7 @@ public class LRUCacheTest {
         System.out.println(lruCache.toString());
 
         lruCache.get(60);
-
         lruCache.get(10);
-
         lruCache.get(40);
 
         lruCache.add(10, "Ten");
@@ -32,6 +30,5 @@ public class LRUCacheTest {
         lruCache.add(80, "Eighty");
 
         System.out.println(lruCache.toString());
-
     }
 }
