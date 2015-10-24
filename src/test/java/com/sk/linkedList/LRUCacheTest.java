@@ -10,6 +10,7 @@ public class LRUCacheTest {
 
     @Test
     public void testLRUCache() {
+
         LRUCacheImpl<Integer, String> lruCache = new LRUCacheImpl(4);
 
         lruCache.add(10, "Ten");
@@ -28,6 +29,7 @@ public class LRUCacheTest {
         lruCache.add(10, "Ten");
         lruCache.add(70, "Seventy");
         lruCache.add(80, "Eighty");
+        lruCache.add(100, "Hundred");
 
         System.out.println(lruCache.toString());
     }
